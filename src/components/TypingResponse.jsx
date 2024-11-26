@@ -18,7 +18,7 @@ export default function TypingResponse({ response }) {
     };
 
     setDisplayedText(""); // Clear previous text
-    (response == "Processing...") ? setDisplayedText("Processing...") : typeCharacter(); // Start typing animation
+    (response === "Processing...") ? setDisplayedText("Processing...") : typeCharacter(); // Start typing animation
 
     return () => {
       // Cleanup for re-triggering typing effect
